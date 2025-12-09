@@ -1,0 +1,98 @@
+header {
+width: 1680;
+height: 80;
+angle: 0 deg;
+opacity: 1;
+    background: #152237;
+
+}
+
+.navigation {
+    max-width: 1680px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 100%;
+}
+
+.logo img {
+    width: 84px;
+    height: 31px;
+    object-fit: contain;
+    display: block;
+}
+.f {
+width: 110;
+height: 18;
+top: 31px;
+left: 350px;
+opacity: 1;
+font-family: Montserrat;
+font-weight: 500;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: -1.5%;
+text-align: center;
+vertical-align: middle;
+color: #FFFFFF;
+
+}
+
+.recherche {
+width: 477;
+height: 40;
+top: 20px;
+left: 603px;
+angle: 0 deg;
+opacity: 1;
+border-width: 1px;
+border: 1px solid #FFFFFF;
+
+}
+
+.recherche input {
+    width: 90;
+height: 18;
+top: 31px;
+left: 620px;
+angle: 0 deg;
+opacity: 1;
+
+font-family: Montserrat;
+font-weight: 500;
+font-size: 15px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: -1.5%;
+text-align: center;
+vertical-align: middle;
+
+.b01 {
+    width: 130;
+height: 40;
+top: 20px;
+left: 1300px;
+angle: 0 deg;
+opacity: 1;
+border-radius: 6px;
+background: #FFFFFF;
+
+}
+
+.b00 {width: 130;
+height: 40;
+top: 20px;
+left: 1449px;
+angle: 0 deg;
+opacity: 1;
+border-radius: 6px;
+background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%);
+
+}
+
+background: url('data:image/svg+xml;utf8,\
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>')
+    no-repeat right 10px center;
+    background-size: 18px;}
