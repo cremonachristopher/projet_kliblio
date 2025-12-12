@@ -1,0 +1,190 @@
+body {
+    margin: 0px;
+    min-width: 1200px;
+}
+/* En-tête*/
+    header {
+max-width: 100%;
+width: 1680px;
+
+height: 80px;
+opacity: 1;
+background: #152237;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+
+}
+header img {
+width: 84px;
+height: 31px;
+
+}
+header p {
+        font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    margin: 0;
+    display: flex;
+    align-items: center;zzz
+}
+
+.button {
+     display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.b01 {
+width: 130px;
+height: 40px;
+top: 20px;
+left: 1300px;
+opacity: 1;
+border-radius: 6px;
+background: #FFFFFF; 
+font-size: 15px;
+}
+.b02 {
+width: 130px;
+height: 40px;
+top: 20px;
+left: 1449px;
+opacity: 1;
+border-radius: 6px;
+font-size: 15px;
+background: linear-gradient(95.98deg, #44DD8A 8.7%, #15B7E2 100%)
+}
+
+header input {
+width: 90px;
+height: 18px;
+top: 31px;
+left: 620px;
+opacity: 1;
+width: 477px;
+height: 40px;
+opacity: 1;
+border-width: 1px;
+border-radius: 6px;
+background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cline x1='21' y1='21' x2='16.65' y2='16.65'/%3E%3C/svg%3E")
+  no-repeat right 10px center;
+    background-size: 18px;
+    border: 1px solid #FFFFFF
+}
+header input::placeholder {
+width: 90px;
+height: 18px;
+top: 31px;
+left: 620px;
+opacity: 1;
+font-family: 'Montserrat', sans-serif;
+font-weight: 500;
+font-size: 15px;
+line-height: 100%;
+letter-spacing: -1.5%;
+text-align: center;
+vertical-align: middle;
+color: #FFFFFF;
+
+}
+
+.premier {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 450px;
+
+    background: linear-gradient(94deg, rgba(68,221,138,0.8) 3%, rgba(21,183,226,0.8) 98%),
+    url(bg-header.png);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+.premier h1 {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    font-size: 48px;
+    color: #152237;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.premier h3 {
+    margin-top: 0;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 20px;
+    color: #000;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.premier button {
+
+padding: 12px 24px;
+
+background: #FFFFFF;
+color: #152237;
+border-radius: 6px;
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 18px;
+letter-spacing: -0.015em;
+
+display: flex;
+align-items: center;
+text-align: center;
+}
+/* Section 1 */
+.deux {
+    width: 100%;
+    padding: 60px 100px;
+    margin: 53px 0;
+    background: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
+
+background: #FFFFFF;
+
+
+}
+.deuux {
+    font-weight: 800;
+    font-size: 36px;
+    color: #152237;
+    letter-spacing: -0.015em;
+    margin-bottom: 40px;
+}
+
+.deux .container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.card {
+
+}
+.prix {
+
+}
+.paprix {
+
+}
+
+.titre {
+
+}
+.stars {
+
+}
+.description {
+
+}
