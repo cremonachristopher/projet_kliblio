@@ -92,7 +92,7 @@ color: #FFFFFF;
 
 }
 
-.premier {
+.container_hero {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -107,7 +107,7 @@ color: #FFFFFF;
     background-position: center;
     text-align: center;
 }
-.premier h1 {
+.container_hero h1 {
     font-family: 'Montserrat';
     font-weight: 800;
     font-size: 48px;
@@ -116,7 +116,7 @@ color: #FFFFFF;
     margin-bottom: 10px;
 }
 
-.premier h3 {
+.container_hero h3 {
     margin-top: 0;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -125,7 +125,7 @@ color: #FFFFFF;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.premier button {
+.container_hero button {
 
 padding: 12px 24px;
 
@@ -145,46 +145,135 @@ align-items: center;
 text-align: center;
 }
 /* Section 1 */
-.deux {
-    width: 100%;
-    padding: 60px 100px;
-    margin: 53px 0;
+.marché {
+ 
+    padding: 30px 0 60px;
     background: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
-
-background: #FFFFFF;
-
+}
+.marché .container {
+    max-width: 1680px;
+    margin: 0 auto;
+    padding: 0 97px;
 
 }
-.deuux {
+
+.marché h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
     font-weight: 800;
     font-size: 36px;
-    color: #152237;
+    line-height: 72px;
     letter-spacing: -0.015em;
-    margin-bottom: 40px;
-}
+    color: #152237;
 
-.deux .container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    white-space: nowrap;
+    margin-bottom: 30px;
 }
 .card {
-
+    display: flex;
+    gap: 92px;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    flex-wrap: nowrap;
 }
+
+.card_marché {
+    width: 307px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_marché img {
+    width: 305px;
+    height: 206px;
+    object-fit: cover;
+    background: #44DD8A;
+}
+
+.card_prix {
+    position: absolute;
+    top: 190px;
+    right: 15px;
+    background: #152237;
+    border-radius: 93px;
+    padding: 6px 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 5px 4px 13.2px -1px rgba(0, 0, 0, 0.25);
+}
+
 .prix {
-
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
 }
-.paprix {
 
+.priz {
+    font-size: 10px;
+    text-decoration: line-through;
+    color: #fff;
 }
 
-.titre {
-
+.card_marché h3 {
+    margin: 30px 16px 6px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.015em;
+    color: #152237;
 }
+
+.auteur {
+    margin: 0 16px 10px;
+    font-size: 16px;
+    line-height: 25px;
+    color: #152237;
+}
+
 .stars {
-
+    margin: 0 16px 10px;
 }
-.description {
 
+.stars i {
+    color: #FFC700;
+    font-size: 16px;
+}
+
+.description {
+    margin: 0 16px 20px;
+    font-size: 16px;
+    line-height: 18px;
+    color: #152237;
+}
+
+.btn_marché {
+    width: 225px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 0 auto;
+
+    background: #152237;
+    border: none;
+    border-radius: 6px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.015em;
+    color: #FFFFFF;
+    white-space: nowrap;
+
+    cursor: pointer;
 }
