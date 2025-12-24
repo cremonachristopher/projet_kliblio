@@ -1,6 +1,5 @@
 body {
     margin: 0px;
-    min-width: 1200px;
 }
 /* En-tête*/
     header {
@@ -86,8 +85,43 @@ line-height: 100%;
 text-align: center;
 vertical-align: middle;
 color: #FFFFFF;
-
 }
+
+.menu-mobile {
+  display: none;
+  width: 56px;
+  height: 56px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.menu-mobile span {
+  width: 24px;
+  height: 2px;
+  background: #FEF7FF;
+  display: block;
+}
+
+@media (max-width: 768px) {
+   header {
+    justify-content: space-between;
+    height: 64px;
+    padding: 10px 20px;
+  }
+  .nav, header input, .button {
+    display: none;
+  }
+  .menu-mobile {
+    display: flex;
+  }
+}
+
 /*Section 0*/
 .container_hero {
     display: flex;
@@ -142,8 +176,8 @@ border: none;
 display: flex;
 align-items: center;
 text-align: center;
-
 }
+
 /* Section 1 */
 .marché {
  
@@ -162,7 +196,6 @@ text-align: center;
     font-weight: 800;
     font-size: 36px;
     color: #152237;
-    white-space: nowrap;
     margin-bottom: 30px;
 }
 .card {
@@ -269,6 +302,54 @@ color: #152237;
     white-space: nowrap;
 
     cursor: pointer;
+}
+@media (max-width: 768px) {
+  .marché .container {
+    padding: 0 20px; 
+  }
+
+  .card {
+    flex-direction: column; 
+    align-items: center;   
+    gap: 20px;     
+  }
+
+  .card_marché {
+    width: 100%;  
+    max-width: 305px;
+    height: auto;  
+  }
+
+ .marché h2 {
+    white-space: normal; 
+    text-align: center;  
+    margin-bottom: 20px;
+  }
+
+  .card_marché img {
+    width: 100%;
+    height: auto;   
+  }
+
+  .card_prix {
+    top: 160px;
+    right: 10px;
+    padding: 5px 12px;
+  }
+
+  .card_marché h4 {
+    font-size: 20px;
+  }
+
+  .auteur, .description {
+    font-size: 14px;
+    margin: 0 10px 10px;
+  }
+
+  .btn_marché {
+    width: 80%;
+    font-size: 14px;
+  }
 }
 /*Section II*/
 .blackmarket {
@@ -382,6 +463,65 @@ color: #152237;
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+
+  .blackmarket {
+    padding: 40px 20px 60px;
+  }
+
+  .blackmarket .container {
+    padding: 0 20px;
+  }
+
+  .blackcard {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card_blackmarket {
+    width: 100%;
+    max-width: 305px;
+    height: auto;
+  }
+
+  .blackmarket h2 {
+    white-space: normal;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+
+  .card_blackmarket img {
+    width: 100%;
+    height: auto;
+  }
+
+  .card_blackprix {
+    top: 160px;
+    right: 10px;
+    padding: 5px 12px;
+  }
+
+  .blackmarket h4 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .blackauteur,
+  .blackdescription {
+    font-size: 14px;
+    margin: 0 10px 10px;
+    text-align: center;
+  }
+
+  .blackbtn {
+    width: 80%;
+    font-size: 14px;
+  }
+}
+
 /*Section III*/
 .avis {
   background: #ffffff;
@@ -439,6 +579,57 @@ margin: 0 auto;
   font-weight: 400;
   font-size: 16px;
   line-height: 30px;
+}
+
+
+@media (max-width: 768px) {
+
+  .avis {
+    padding: 0 0 60px;
+  }
+
+  .avis .container {
+    padding: 0 20px;
+  }
+
+  .avis-titre {
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .avis-liste {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .avis-card {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+  }
+
+  .avis-photo {
+    margin: 0 auto 16px;
+    width: 110px;
+    height: 110px;
+  }
+
+  .avis-card h4 {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 8px;
+  }
+
+  .blackstars {
+    margin-bottom: 12px;
+  }
+
+  .avis-texte {
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 100%;
+  }
 }
 
 /* Section IV */
@@ -504,19 +695,59 @@ flex:1;
     flex-shrink: 0;
 }
 
-@media (max-width: 900px) {
-    .avantages__content {
-        flex-direction: column;
-    }
+@media (max-width: 768px) {
 
-    .avantages__title {
-        font-size: 32px;
-    }
+  .avantages {
+    padding: 60px 0;
+  }
 
-    .avantages__item p {
-        font-size: 18px;
-    }
+  .avantages__container {
+    padding: 0 20px;
+  }
+
+  .avantages__content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .avantages__image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 6px;
+  }
+
+  .avantages__text {
+    width: 100%;
+  }
+
+  .avantages__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .avantages__list {
+    gap: 20px;
+  }
+
+  .avantages__item {
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .avantages__item p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .avantages__icon {
+    width: 22px;
+    height: 22px;
+  }
 }
+
 /* Section V */
  .formation {
     background: #44DD8A;
@@ -589,6 +820,62 @@ flex:1;
     flex-shrink: 0;
     border-radius: 4px;
 }
+
+@media (max-width: 768px) {
+
+  .formation {
+    padding: 60px 0;
+  }
+
+  .formation__container {
+    padding: 0 20px;
+  }
+
+  .formation__content {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+  }
+
+  .formation__text {
+    width: 100%;
+  }
+
+  .formation__title {
+    font-size: 28px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+
+  .formation__list {
+    gap: 20px;
+  }
+
+  .formation__item {
+    font-size: 16px;
+    line-height: 22px;
+    align-items: flex-start;
+  }
+
+  .formation__item p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .formation__item svg {
+    width: 22px;
+    height: 22px;
+    min-width: 22px;
+  }
+
+  .formation__image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    border-radius: 6px;
+  }
+}
 /* Section VI */
 .propos {
   display:flex;
@@ -652,6 +939,57 @@ flex:1;
   z-index: 2;
 }
 
+@media (max-width: 768px) {
+
+  .propos {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: auto;
+    padding-top: 20px;
+  }
+
+  .propos-text {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+
+  .propos-text h2 {
+    width: 100%;
+    margin: 0 auto 16px;
+
+    text-align: center;
+    display: block;
+
+    font-size: 28px;
+    margin-bottom: 24px;
+
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+
+  .propos-text p {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .propos-image {
+    width: 100%;
+    min-height: 260px;
+    height: 260px;
+    margin-top: 20px;
+  }
+
+  .propos-logo {
+    width: 200px;
+    max-width: 90%;
+  }
+}
+
 /* Section VII */
 .contact {
   width: 100%;
@@ -683,9 +1021,6 @@ flex:1;
   flex-direction: column;
   text-align: center;
   gap: 24px;
-}
-.nom-mail {
-
 }
 .formuname {
 margin-right: 70px;
@@ -735,6 +1070,46 @@ margin-right: 70px;
   color: #152237;
   letter-spacing: -0.015em;
 }
+
+@media (max-width: 768px) {
+  .nom-mail {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .nom-mail label {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
+  .contact input {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  .contact textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px 15px;
+    box-sizing: border-box;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn__contact {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
 /* Section VIII */
 .line__footer {
 max-width: 100%;
@@ -809,5 +1184,49 @@ height: 87px;
   display: flex;
   align-items: center;
   gap: 12px;
-  
 }
+
+@media (max-width: 768px) {
+  .btn__footer,
+  .media__footer,
+  .foot__footer,
+  .line__footer {
+    display: none;
+  }
+
+  .footer__footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px 0 20px;
+    color: white;
+  }
+
+  .mentions-legales-title,
+  .coordonnees-title {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 12px;
+  }
+
+  .mentions-list,
+  .coordonnees-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .mention__footer {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .background__footer {
+    height: auto;
+    padding-bottom: 20px;
+  }
+}
+
